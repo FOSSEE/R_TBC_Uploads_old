@@ -1,0 +1,7 @@
+set.seed(12345)
+mean(exp(runif(10)))
+mean(exp(runif(10)))
+mean(exp(runif(10)))
+mean(exp(runif(1000000)))
+mean(exp(runif(1000000)))
+mean(exp(runif(1000000)))

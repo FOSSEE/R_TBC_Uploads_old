@@ -1,0 +1,17 @@
+#H0 :  mu<2
+#H1 :  mu>2
+
+data=c(0.406 ,0.685 ,4.778 ,1.725 ,8.223, 2.343 ,1.401 ,1.507 ,0.294, 2.230, 0.538, 0.234 ,4.025 ,3.323, 2.920, 5.088 ,1.458, 1.064, 0.774 ,0.761 ,5.587 ,0.517, 3.246, 2.330 ,1.064 ,2.563 ,0.511 ,2.782 ,6.426 ,0.836 ,0.023 ,0.225, 1.514 ,3.214 ,3.810 ,3.334 ,2.325 ,0.333 ,7.514 ,0.968 ,3.491, 2.921 ,
+       1.624, 0.334, 4.490, 1.267, 1.702, 2.634 ,1.849 ,0.186)
+
+# install the package DescTools
+
+library(DescTools)
+p_value =ZTest(data,alternative = "greater",mu=2,sd_pop = sd(data),conf.level = 0.95)$p.value
+alpha =0.05
+
+if(p_value>alpha){
+  cat("Null hypothesis is accepted")
+}else{
+  cat("Null hypothesis is rejected")
+}

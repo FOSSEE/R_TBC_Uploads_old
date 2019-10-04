@@ -1,0 +1,3 @@
+#Describing distribution with numbers (Stemplots)
+x<- c(23,4,29,44,47,24,40,23,23,44,33,27,60,46,61,11,23,62,31,44,77,14,65,42)
+stem(x,scale = 2)

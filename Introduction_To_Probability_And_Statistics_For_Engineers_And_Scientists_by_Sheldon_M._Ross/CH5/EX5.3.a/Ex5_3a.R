@@ -1,0 +1,1 @@
+dhyper(4, m = 15, n = 5, k = 6)+dhyper(5, m = 15, n = 5, k = 6)+dhyper(6, m = 15, n = 5, k = 6)

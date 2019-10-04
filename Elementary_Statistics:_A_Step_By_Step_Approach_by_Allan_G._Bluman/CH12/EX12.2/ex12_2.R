@@ -1,0 +1,5 @@
+x<-data.frame("tp"=c(7,14,32,19,10,11),"mf"=c(10,1,1,0,11,1),"bv"=c(1,12,1,9,1,11))
+mo<-c(x$tp,x$mf,x$bv)
+gr<-factor(rep(letters[1:3],each = 6))
+fit=aov(formula = mo ~ gr)
+anova(fit)

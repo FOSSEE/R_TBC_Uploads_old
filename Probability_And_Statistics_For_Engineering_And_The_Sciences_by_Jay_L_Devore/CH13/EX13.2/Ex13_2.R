@@ -1,0 +1,21 @@
+#Ex13.2, Page 526
+
+x<-c(100,125,125,150,150,200,200,250,250,300,300,350,400,400)
+y<-c(150,140,180,210,190,320,280,400,430,440,390,600,610,670)
+y_cap<-(-45.55)+(1.71*x)
+m1<-lm(y~x)
+ei<-round(resid(m1),digits=1)
+ei_std<-round(rstandard(m1),digits=2)
+df<-data.frame(x,y,y_cap,ei,ei_std)
+print(df)
+
+par(mfrow=c(3,2))
+plot(x,y,main="y vs. x")
+abline(m1)
+plot(y_cap,ei_std,main="Standardized residuals vs. y_cap")
+abline(0,0)
+plot(y,y_cap,main="y_cap vs. y")
+abline(lm(y_cap~y))
+plot(x,ei_std,main="Standardized residuals vs. x")
+abline(0,0)
+qqnorm(ei_std,xlab="z percentile",ylab="e*",main="Normal probability plot")

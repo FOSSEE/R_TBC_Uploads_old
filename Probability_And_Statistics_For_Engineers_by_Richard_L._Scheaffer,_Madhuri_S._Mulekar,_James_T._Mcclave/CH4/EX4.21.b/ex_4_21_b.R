@@ -1,0 +1,5 @@
+cat("No. of ways three employees of a certain ethnic group get assigned to job I", factorial(7)/(factorial(4)*factorial(3)))
+a <-  factorial(7)/(factorial(4)*factorial(3))
+cat("No. of ways of assigning job", factorial(10)/(factorial(3)*factorial(4)*factorial(3)))
+b <- factorial(10)/(factorial(3)*factorial(4)*factorial(3))
+cat("prob is", a/b)

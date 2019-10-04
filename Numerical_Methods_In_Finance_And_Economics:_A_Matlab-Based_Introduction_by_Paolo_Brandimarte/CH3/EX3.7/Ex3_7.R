@@ -1,0 +1,5 @@
+#install.packages("Matrix")
+require(Matrix)
+kappa(Hilbert(3),exact = TRUE)
+kappa(Hilbert(7),exact = TRUE)
+kappa(Hilbert(10),exact = TRUE)

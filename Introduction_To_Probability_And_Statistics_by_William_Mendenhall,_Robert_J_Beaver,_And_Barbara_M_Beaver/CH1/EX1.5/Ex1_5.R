@@ -1,0 +1,7 @@
+category<-c("Millitary personnel","Operation and maintenance","Procurement","Research and development","Military construction","Other")
+amount<-c(127.5,188.1,82.3,65.7,5.3,5.5)
+label<-paste(category,amount)
+label<-paste(label,"%",sep=" ")
+par(mfrow=c(1,2))
+pie(amount,labels = label,clockwise = TRUE)
+barplot(amount, ylab="amount(in Billions)",xlab="category",ylim=c(0,200),names.arg = c("Millitary personnel","Operation and maintenance","Procurement","Research and development","Military construction","Other"))

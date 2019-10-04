@@ -1,0 +1,5 @@
+accidents<-c(4,0,6,5,2,1,2,0,4,3)
+lambda= mean(accidents)
+cat("lambda:",lambda)
+prob = ppois(q = 2, lambda = lambda)
+cat("Proportion of non-rainy days that had 2 or fewer accidents that year:",prob)

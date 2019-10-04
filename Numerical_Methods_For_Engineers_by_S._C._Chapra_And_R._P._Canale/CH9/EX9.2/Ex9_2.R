@@ -1,0 +1,12 @@
+#For fig9.1
+a= matrix(data = c(3, 2,-1, 2),nrow = 2,ncol = 2,byrow = TRUE)
+cat("The value of determinant for system repesented in fig 9.1 =",det(a))
+#For fig9.2 (a)
+a= matrix(data = c(-0.5, 1,-0.5, 1),nrow = 2,ncol = 2,byrow = TRUE)
+cat("The value of determinant for system repesented in fig 9.2 (a) =",det(a))
+#For fig9.2 (b)
+a= matrix(data = c(-0.5, 1,-1, 2),nrow = 2,ncol = 2,byrow = TRUE)
+cat("The value of determinant for system repesented in fig 9.2 (b) =",det(a))
+#For fig9.2 (c)
+a= matrix(data = c(-0.5, 1,-2.3/5, 1),nrow = 2,ncol = 2,byrow = TRUE)
+cat("The value of determinant for system repesented in fig 9.2 (c) =",det(a))

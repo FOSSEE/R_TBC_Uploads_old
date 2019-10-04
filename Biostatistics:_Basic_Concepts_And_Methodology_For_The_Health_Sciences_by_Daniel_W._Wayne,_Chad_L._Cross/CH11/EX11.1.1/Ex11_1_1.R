@@ -1,0 +1,11 @@
+##Example 11.1.1 Pg.540
+##Box and whiskers plot
+
+THC <- c(.30,2.75,2.27,2.37,1.12,.60,.61,.89,.33,.85,2.18,3.59,.28,1.90,1.71,.85,1.53,2.25,.88,.49,4.35,.67,2.74,.79,6.94)
+log_THC <- log10(THC)
+log_THC
+data = data.frame(THC,log_THC)
+
+#install.packages("car")
+library(car)
+Boxplot(data,ylab="concentration")

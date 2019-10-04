@@ -1,0 +1,11 @@
+a <- c(.6,.7,.9,.5)
+B <- c(.9,1.1,1.3,.7)
+c <- c(.8,.7,1.0,.8)
+d <- c(.7,.8,1.0,.6)
+e <- c(.5,.5,.7,.4)
+f <- c(.6,.5,.8,.6)
+data2 <- matrix(c(.6,.9,.8,.7,.5,.6,.7,1.1,.7,.8,.5,.5,.9,1.3,1.0,1.0,.7,.8,.5,.7,.8,.6,.4,.6),nrow = 4, ncol = 6,byrow = T)
+dimnames(data2) = list(c(1,2,3,4), c("a","b","c","d","e","f"))
+friedman.test(data2)
+p_value <- friedman.test(data2)$p.value
+cat(" Approximate p-value = ",p_value,",which is slightly less than 0.005")

@@ -1,0 +1,5 @@
+measurement<-c(5,7,1,2,4)
+variance <- var(measurement)
+standard_deviation <- sd(measurement)
+cat("the variance is",variance)
+cat("the standard deviation is",standard_deviation)

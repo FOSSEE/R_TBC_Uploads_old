@@ -1,0 +1,13 @@
+#Histogram to Normal Scores plot of normalized data
+data=c(2208,4201,3848,9112,2082,5913,1620,6719,21657,
+  3072,2949,11768,4731,14211,1583,9853,78811,6655,
+  1803,7012,1892,4227,6583,15147,4740,8528,10563,
+  43003,16723,2613,26463,34867,4191,4030,2472,28840,
+  24487,14001,15241,1643,5732,5419,28608,2487,995,
+  3116,29508,11440,28336,3440
+)
+hist(data,ylab="Class frequency", xlab="time")
+qqnorm(data, ylab="Interrquest time", xlab="Normal Scores",  main="") 
+ln=log(data)
+hist(ln,ylab="Class frequency", xlab="ln(time)")
+qqnorm(ln, ylab="ln(Interrquest time)", xlab="Normal Scores",  main="") 

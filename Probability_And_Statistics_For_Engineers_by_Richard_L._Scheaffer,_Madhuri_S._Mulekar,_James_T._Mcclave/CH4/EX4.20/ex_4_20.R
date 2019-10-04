@@ -1,0 +1,7 @@
+cat("No. of ways to select 2 applicants", choose(5,2))
+a <- choose(5,2)
+cat("No. of ways to select one of the best ", choose(2,1))
+b <- choose(2,1)
+cat("No. of ways to select other employee", choose(3,2))
+c <-choose(3,2)
+cat("prob is", (b*c)/a)
